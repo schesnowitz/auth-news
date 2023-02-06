@@ -48,6 +48,10 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",    
 
+# films app
+    'django_extensions',
+    'films.apps.FilmsConfig',   
+
 ]
 
 MIDDLEWARE = [
@@ -65,7 +69,8 @@ ROOT_URLCONF = 'main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates' ], 
+ 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
